@@ -6,7 +6,7 @@ i2c = board.I2C()  # uses board.SCL and board.SDA
 # i2c = board.STEMMA_I2C()  # For using the built-in STEMMA QT connector on a microcontroller
 dps310 = DPS310(i2c)
 
-dps310.sea_level_pressure = 1007
+dps310.sea_level_pressure = 1002
 
 while True:
     print("Temperature = %.2f *C" % dps310.temperature)
